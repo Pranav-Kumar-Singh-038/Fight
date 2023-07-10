@@ -28,6 +28,9 @@ That's it! You should now be able to play the Simple Fighting Game on your local
 ## Usage
 Upon opening the game in your web browser, the game starts, you can control the player character using the specified keys or buttons for movement and attack. Enjoy the game and defeat your opponents!
 
+To play the Character on the left, use the keys A,W,D,space for left, jump, right and attack commands respectively.
+Likewise To play the Character on the right, use the keys arrowLeft, arrowUp, arrowRight, arrowDown for left, jump, right and attack commands respectively.
+
 ## Credits
 The creation of the Simple Fighting Game was made possible with the help of various resources and tutorials. We would like to acknowledge the following:
 
