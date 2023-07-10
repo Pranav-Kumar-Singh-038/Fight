@@ -1,6 +1,7 @@
 # Simple Fighting Game
 
 Welcome to the Simple Fighting Game! This is a basic fighting game built using the HTML canvas element and JavaScript. It features different backgrounds and player movements, using PNG images obtained from the itch.io platform. The game also utilizes the "Press Start" font from Google Fonts and a color palette inspired by the "Kuler Color Theme" website. Animation effects on the health bar are achieved using the GSAP CDN (GreenSock Animation Platform).
+Please enjoy the game and provide the  necessary feedback to help me improve it.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -18,6 +19,9 @@ To run the Simple Fighting Game locally, follow these steps:
 1. Clone the repository or download the source code as a ZIP file.
 2. Extract the contents of the ZIP file, if necessary.
 3. Open the `index.html` file in a web browser.
+   Also
+* Your can Directly play the game <a href="https://fight-pranavkumarsingh.netlify.app/">here</a>.
+  
 
 That's it! You should now be able to play the Simple Fighting Game on your local machine.
 
