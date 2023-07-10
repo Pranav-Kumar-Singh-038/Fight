@@ -26,7 +26,7 @@ To run the Simple Fighting Game locally, follow these steps:
 That's it! You should now be able to play the Simple Fighting Game on your local machine.
 
 ## Usage
-Upon opening the game in your web browser, you will see the main menu with the "Press Start" text font. Use the available controls to navigate through the menu and start the game. Once the game starts, you can control the player character using the specified keys or buttons for movement and attack. Enjoy the game and defeat your opponents!
+Upon opening the game in your web browser, the game starts, you can control the player character using the specified keys or buttons for movement and attack. Enjoy the game and defeat your opponents!
 
 ## Credits
 The creation of the Simple Fighting Game was made possible with the help of various resources and tutorials. We would like to acknowledge the following:
