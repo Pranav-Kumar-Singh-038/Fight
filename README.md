@@ -1,12 +1,14 @@
 # Simple Fighting Game
 
 Welcome to the Simple Fighting Game! This is a basic fighting game built using the HTML canvas element and JavaScript. It features different backgrounds and player movements, using PNG images obtained from the itch.io platform. The game also utilizes the "Press Start" font from Google Fonts and a color palette inspired by the "Kuler Color Theme" website. Animation effects on the health bar are achieved using the GSAP CDN (GreenSock Animation Platform).
-Please enjoy the game and provide the  necessary feedback to help me improve it.
+
+**Please note that this project is ongoing and there are some features that will be implemented in the future.**
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Future Features](#future-features)
 - [Credits](#credits)
 - [License](#license)
 
@@ -19,17 +21,31 @@ To run the Simple Fighting Game locally, follow these steps:
 1. Clone the repository or download the source code as a ZIP file.
 2. Extract the contents of the ZIP file, if necessary.
 3. Open the `index.html` file in a web browser.
-   Also
-* Your can Directly play the game <a href="https://fight-pranavkumarsingh.netlify.app/">here</a>.
-  
+
+Alternatively, you can play the game directly [here](https://fight-pranavkumarsingh.netlify.app/).
 
 That's it! You should now be able to play the Simple Fighting Game on your local machine.
 
 ## Usage
-Upon opening the game in your web browser, the game starts, you can control the player character using the specified keys or buttons for movement and attack. Enjoy the game and defeat your opponents!
+Upon opening the game in your web browser, the game starts, and you can control the player character using the specified keys or buttons for movement and attack. Enjoy the game and defeat your opponents!
 
-To play the Character on the left, use the keys A,W,D,space for left, jump, right and attack commands respectively.
-Likewise To play the Character on the right, use the keys arrowLeft, arrowUp, arrowRight, arrowDown for left, jump, right and attack commands respectively.
+- To play the character on the left, use the keys A, W, D, Space for left, jump, right, and attack commands, respectively.
+- To play the character on the right, use the keys ArrowLeft, ArrowUp, ArrowRight, ArrowDown for left, jump, right, and attack commands, respectively.
+
+## Future Features
+The Simple Fighting Game is an ongoing project, and the following features will be implemented in the future:
+
+- Sound effects and vibration to enhance the gaming experience.
+- Character selection to allow players to choose their preferred fighters.
+- Adjustments to prevent players from moving out of the canvas width.
+- Implementation of enemy AI for single-player mode.
+- Optimization for mobile devices to make the game playable on smartphones and tablets.
+- Addition of Jest tests to ensure maximum code coverage.
+- Personalized comments and documentation to enhance code readability and understanding.
+- Exploration and explanation of the CSS used in the project.
+- Implementation of turning animations for the characters when they cross each other.
+
+Stay tuned for updates as these features are added to the game!
 
 ## Credits
 The creation of the Simple Fighting Game was made possible with the help of various resources and tutorials. We would like to acknowledge the following:
