@@ -47,8 +47,23 @@ The Simple Fighting Game is an ongoing project, and the following features will 
 
 Stay tuned for updates as these features are added to the game!
 
+## Making
+To make the game by yourself -:
+- You must have Basic Knowledge of HTML, CSS and JavaScript
+- Knowledge of HTML5 canvas element and how it is used to make animate basic shapes and images
+- You can follow Chris Courses Channel to learn HTML5
+- then you must first start by making rectangles in the canvas and making them interact using arrow keys by adding various event listeners and changing the position of the rectangle accordingly.
+- Make sure to add the gravity function so as make jump look natural
+- add attack boxes and which appear when an attack is performed
+- add divs to showcase the health bars and timer
+- reduce the health(by 20% in my case) whenever when an attack connects
+- replace the rectangles and backgrounds with sprites
+- To animate the png files crop over a part of the image and loop over the number of frames the png file has
+- refract and abstract the add features and animation according to you liking
+- your basic project should now be ready to deploy
+
 ## Credits
-The creation of the Simple Fighting Game was made possible with the help of various resources and tutorials. We would like to acknowledge the following:
+The creation of the Simple Fighting Game was made possible with the help of various resources and tutorials. I would like to acknowledge the following:
 
 - itch.io: Provides the PNG images for character sprites and backgrounds used in the game.
 - Google Fonts: Offers the "Press Start" font used for text elements in the game.
