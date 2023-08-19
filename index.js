@@ -1,12 +1,12 @@
 //refract the entire code into different files for classes and utils ||
-// make the sprites after jump non glitchy for that use a separate change sprite function
-// correct the position of attack boxes 
-// make the animation of attacks seamless and non glithcy instead of playing the complete animation all over again
-// make the recieve hit animation
-// make the death animation 
-// improve the design for health bar and timer
-// upload on github
-// host on a free domain
+// make the sprites after jump non glitchy for that use a separate change sprite function||
+// correct the position of attack boxes ||
+// make the animation of attacks seamless and non glithcy instead of playing the complete animation all over again||
+// make the recieve hit animation||
+// make the death animation ||
+// improve the design for health bar and timer||
+// upload on github||
+// host on a free domain||
 
 // add sound effects and vibration
 //make character selection possible
@@ -26,6 +26,38 @@ canvas.height = 751
 
 c.fillRect(0, 0, canvas.width, canvas.height)
 
+
+document.querySelector(".play-music").addEventListener("click", () => {
+  if (!background.music.overworld.playing()) {
+     background.music.overworld.play();
+  }
+})
+document.querySelector(".stop-music").addEventListener("click", () => {
+   background.music.overworld.pause();
+})
+
+var sfx = {
+  run: new Howl({
+     src: [
+        './sfx/Run_player.wav'
+     ]
+  }),
+  attack1: new Howl({
+    src: [
+      './sfx/Attack-1.wav'
+    ]
+  })
+}
+
+function runSfx()
+{
+  if(!sfx.run.playing())
+  {
+    sfx.run.play();
+  }
+}
+
+
 const gravity = 0.7
 
 const background = new Sprite({
@@ -33,7 +65,14 @@ const background = new Sprite({
     x: 0,
     y: 0
   },
-  imageSrc: './img/background.png'
+  imageSrc: './img/background.png',
+  music : {
+    overworld: new Howl({
+       src: [
+          "./sfx/Background.mp3"
+       ]
+    })
+  }
 })
 
 const tower = new Sprite({
@@ -94,8 +133,8 @@ const player = new Fighter({
     death: {
       imageSrc: './img/Fantasy Warrior/Death.png',
       framesMax: 7
-    }
-  },
+    }  },
+    
   attackBox: {
     offset: {
       x: 100 ,
@@ -202,9 +241,11 @@ function animate() {
   if (keys.a.pressed && player.lastKey === 'a') {
     player.velocity.x = -5
     player.switchSprite('run')
+    runSfx();
   } else if (keys.d.pressed && player.lastKey === 'd') {
     player.velocity.x = 5
     player.switchSprite('run')
+    runSfx();
   } else {
     player.switchSprite('idle')
   }
@@ -220,9 +261,11 @@ function animate() {
   if (keys.ArrowLeft.pressed && enemy.lastKey === 'ArrowLeft') {
     enemy.velocity.x = -5
     enemy.switchSprite('run')
+    runSfx();
   } else if (keys.ArrowRight.pressed && enemy.lastKey === 'ArrowRight') {
     enemy.velocity.x = 5
     enemy.switchSprite('run')
+    runSfx();
   } else {
     enemy.switchSprite('idle')
   }

@@ -2,6 +2,7 @@ class Sprite {
   constructor({
     position,
     imageSrc,
+    music,
     scale = 1,
     framesMax = 1,
     offset = { x: 0, y: 0 }
@@ -17,6 +18,7 @@ class Sprite {
     this.framesElapsed = 0
     this.framesHold = 5
     this.offset = offset
+    this.music=music
   }
 
   draw() {
@@ -128,6 +130,7 @@ class Fighter extends Sprite {
   attack() {
     this.switchSprite('attack1')
     this.isAttacking = true
+    sfx.attack1.play();
   }
 
   takeHit() {
@@ -135,7 +138,7 @@ class Fighter extends Sprite {
 
     if (this.health <= 0) {
       this.switchSprite('death')
-    } else this.switchSprite('takeHit')
+    } else this.switcshSprite('takeHit')
   }
 
   switchSprite(sprite) {
