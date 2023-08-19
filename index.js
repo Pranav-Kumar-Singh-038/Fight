@@ -27,15 +27,6 @@ canvas.height = 751
 c.fillRect(0, 0, canvas.width, canvas.height)
 
 
-document.querySelector(".play-music").addEventListener("click", () => {
-  if (!background.music.overworld.playing()) {
-     background.music.overworld.play();
-  }
-})
-document.querySelector(".stop-music").addEventListener("click", () => {
-   background.music.overworld.pause();
-})
-
 var sfx = {
   run: new Howl({
      src: [
@@ -389,4 +380,13 @@ window.addEventListener('keyup', (event) => {
       keys.ArrowLeft.pressed = false
       break
   }
+})
+
+document.querySelector(".play-music").addEventListener("click", () => {
+  if (!background.music.overworld.playing()) {
+     background.music.overworld.play();
+  }
+})
+document.querySelector(".stop-music").addEventListener("click", () => {
+   background.music.overworld.pause();
 })
