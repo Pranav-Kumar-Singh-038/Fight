@@ -33,11 +33,22 @@ var sfx = {
         './sfx/Run_player.wav'
      ]
   }),
-  attack1: new Howl({
+  attack2: new Howl({
     src: [
+      './sfx/Attack2.wav'
+    ]
+  }),
+  attack1: new Howl({
+    src:[
       './sfx/Attack-1.wav'
     ]
-  })
+  }),
+  jump: new Howl({
+    src:[
+      './sfx/jump.wav'
+    ]
+  }),
+
 }
 
 function runSfx()
@@ -61,7 +72,8 @@ const background = new Sprite({
     overworld: new Howl({
        src: [
           "./sfx/Background.mp3"
-       ]
+       ],
+       volume: 0.15
     })
   }
 })
@@ -333,6 +345,7 @@ window.addEventListener('keydown', (event) => {
         break
       case 'w':
         player.velocity.y = -20
+          sfx.jump.play();
         break
       case ' ':
         player.attack()
@@ -352,6 +365,7 @@ window.addEventListener('keydown', (event) => {
         break
       case 'ArrowUp':
         enemy.velocity.y = -20
+          sfx.jump.play();
         break
       case 'ArrowDown':
         enemy.attack()
@@ -382,11 +396,21 @@ window.addEventListener('keyup', (event) => {
   }
 })
 
-document.querySelector(".play-music").addEventListener("click", () => {
-  if (!background.music.overworld.playing()) {
-     background.music.overworld.play();
+document.addEventListener("keydown",()=>{
+  if(!background.music.overworld.playing())
+  {
+    background.music.overworld.play();
   }
 })
+
+
+document.addEventListener("w",()=>{
+  if(!sfx.jump.playing())
+  {
+    sfx.jump.play();
+  }
+})
+
 document.querySelector(".stop-music").addEventListener("click", () => {
    background.music.overworld.pause();
 })

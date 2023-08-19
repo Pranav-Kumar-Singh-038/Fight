@@ -130,7 +130,7 @@ class Fighter extends Sprite {
   attack() {
     this.switchSprite('attack1')
     this.isAttacking = true
-    sfx.attack1.play();
+    sfx.attack2.play();
   }
 
   takeHit() {
@@ -138,7 +138,7 @@ class Fighter extends Sprite {
 
     if (this.health <= 0) {
       this.switchSprite('death')
-    } else this.switcshSprite('takeHit')
+    } else this.switchSprite('takeHit')
   }
 
   switchSprite(sprite) {
