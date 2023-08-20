@@ -8,7 +8,7 @@
 // upload on github||
 // host on a free domain||
 
-// add sound effects and vibration
+// add sound effects/vibration||
 //make character selection possible
 //do something about the players movine out of the canvas width
 // make enemy AI
@@ -18,6 +18,7 @@
 // understand the various CSS used here
 // make it so that the characters turn towards each other when they cross one another
 // refactor all files into different files
+
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
@@ -31,7 +32,8 @@ var sfx = {
   run: new Howl({
      src: [
         './sfx/Run_player.wav'
-     ]
+     ],
+     rate: 1.9
   }),
   attack2: new Howl({
     src: [
@@ -48,8 +50,8 @@ var sfx = {
       './sfx/jump.wav'
     ]
   }),
-
 }
+
 
 function runSfx()
 {
@@ -73,7 +75,7 @@ const background = new Sprite({
        src: [
           "./sfx/Background.mp3"
        ],
-       volume: 0.15
+       volume: 0.2
     })
   }
 })
