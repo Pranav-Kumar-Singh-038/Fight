@@ -125,6 +125,17 @@ class Fighter extends Sprite {
       this.velocity.y = 0
       this.position.y = 533
     } else this.velocity.y += gravity
+
+    //Preventing moving out of canvas
+    if(this.position.x<-50)
+    {
+      this.position.x=-50
+    }
+
+    if(this.position.x>canvas.width-130)
+    {
+      this.position.x=canvas.width-130
+    }
   }
 
   attack() {
