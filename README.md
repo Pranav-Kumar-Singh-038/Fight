@@ -35,7 +35,6 @@ Upon opening the game in your web browser, the game starts, and you can control 
 ## Future Features
 The Simple Fighting Game is an ongoing project, and the following features will be implemented in the future:
 
-- Sound effects and vibration to enhance the gaming experience.
 - Character selection to allow players to choose their preferred fighters.
 - Adjustments to prevent players from moving out of the canvas width.
 - Implementation of enemy AI for single-player mode.
