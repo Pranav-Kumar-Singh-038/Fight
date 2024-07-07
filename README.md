@@ -49,4 +49,4 @@ The Simple Fighting Game is licensed under the [MIT License](LICENSE). Feel free
 
 
 ## Fight game
-![Fight](./src/assets/Thumbnail.gif) 
+![Fight](./sfx/Thumbnail.gif) 
